@@ -1,16 +1,18 @@
 package org.message.encrypt.hash;
 
 
-import static org.junit.Assert.*;
-import org.junit.Test;
+import static org.junit.Assert.assertNotNull;
 
-public class ND5CipherTest {
+import org.junit.Test;
+import org.message.encrypt.digest.MD5Cipher;
+
+public class MD5CipherTest {
 	
 	private static final String PLAINTEXT = "I am test";
 	
 	@Test
 	public void testGetEncryptedMessage(){
-		String md5 = ND5Cipher.getEncryptedMessage(PLAINTEXT);
+		String md5 = MD5Cipher.getEncryptedMessage(PLAINTEXT);
 		assertNotNull(md5);
 	}
 

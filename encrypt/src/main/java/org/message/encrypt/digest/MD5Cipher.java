@@ -1,4 +1,4 @@
-package org.message.encrypt.hash;
+package org.message.encrypt.digest;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
@@ -8,7 +8,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import com.google.common.io.BaseEncoding;
 
-public class ND5Cipher {
+public class MD5Cipher {
 	
 	public static String getEncryptedMessage(final String encryptSource) {
 		if (StringUtils.isBlank(encryptSource)) {
